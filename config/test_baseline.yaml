@@ -1,0 +1,18 @@
+work_dir: /home/zzx/workspace/code/video_FSL/baseline/work_dir
+data_dir: /home/zzx/workspace2/data/smsm_otam_frames/annotations
+
+model: ResNet50_tam_pretrained
+method: support
+# method: baseline
+test_n_way: 5
+n_shot: 1
+split: 'test'
+
+iter_num: 10000
+batch_size: 8
+num_segments: 8
+base_classes: 64
+n_query: 1
+checkpoint: /home/zzx/workspace/code/temporal-adaptive-module/checkpoint/this_ckpt/somethingotam_RGB_resnet50_avg_segment8_e200
+append_classifier: False
+tam: False
